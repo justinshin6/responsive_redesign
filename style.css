@@ -1,0 +1,129 @@
+/* IMPORTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Jim+Nightshade&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Jim+Nightshade&family=Jua&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Jim+Nightshade&family=Jua&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&family=Ojuju:wght@200..800&display=swap");
+
+/* CONSTANTS */
+:root {
+    --color-background: #e2e8dd;
+    --color-navbar: #697268;
+    --font-header: "Jim Nightshade";
+}
+* body {
+    background-color: var(--color-background);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+div.nav-nav {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-navbar);
+}
+
+div.nav-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+span.nav-link {
+    margin: 0 10px;
+}
+
+.ul {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+span.nav-link > a:hover {
+    text-decoration: underline;
+}
+
+span.nav-link-main > a {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 45px;
+    font-family: var(--font-header);
+}
+
+div.navholder-mobile {
+    display: none;
+}
+
+span.hamburger {
+    display: none;
+}
+/**
+- media query for a tablet 
+**/
+@media screen and (max-width: 1024px) {
+    span.nav-link {
+        margin: 0 10px;
+    }
+    .ul-1,
+    .ul-3 {
+        display: none;
+    }
+}
+/** 
+- media query for phone setting
+**/
+@media screen and (max-width: 600px) {
+    div.nav-nav {
+        display: none;
+    }
+
+    div.navholder-mobile {
+        display: block;
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    a.closebtn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        font-size: 40px;
+        text-decoration: none;
+    }
+
+    div.navholder-content {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.navholder-content > a {
+        padding: 8px;
+        font-size: 36px;
+        display: block;
+    }
+
+    span.hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Redesign Website</title>
+
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />        
+        
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <!-- REGULAR NAV -->
+        <div class="nav-nav">
+            <div class="nav-holder nav-left">
+                <span class="nav-link nav-link-main">
+                    <a class="ul ul-1" href="#" target="_self">Grandma's Country Kitchen</a>
+                </span>
+            </div>
+            <div class="nav-holder nav-left">
+                <span class="nav-link">
+                    <a class="ul ul-1" href="#" target="_self">Home</a>
+                </span>
+                <span class="nav-link">
+                    <a class="ul ul-2" href="#" target="_self">Menu</a>
+                </span>
+                <span class="nav-link">
+                    <a class="ul ul-3" href="#" target="_self">Gift Cards</a>
+                </span>
+                <span class="nav-link">
+                    <a class="ul ul-4" href="#" target="_self">About</a>
+                </span>
+                <span class="nav-link">
+                    <a class="ul ul-5" href="#" target="_self">Contact</a>
+                </span>
+
+            </div>
+        </div>
+
+        <!-- MOBILE NAV -->
+        <div id="navholder-mobile" class="navholder-mobile">
+            <a class="closebtn" onclick="toggleNav()">☰</a>
+            <div class="navholder-content">
+                <a class="ul ul-1" href="#" onclick="toggleNav()"  target="_self">Test</a>
+
+            </div>
+        </div>
+
+        <!-- MOBILE NAV BUTTON -->
+        <span class="hamburger" onclick="toggleNav()">☰</span>
+    </nav>
+
+    
+</body>
+</html>
