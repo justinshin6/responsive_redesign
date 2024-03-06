@@ -8,17 +8,21 @@
 :root {
     --color-background: #e2e8dd;
     --color-navbar: #697268;
+    --color-button: #ef8787;
     --font-header: "Jim Nightshade";
 }
 * body {
     background-color: var(--color-background);
+    margin: 0;
 }
 
+/* NAVBAR  */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 }
 
 div.nav-nav {
@@ -64,10 +68,78 @@ div.navholder-mobile {
 span.hamburger {
     display: none;
 }
+/* BACKGROUND SECTION  */
+.background {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+
+.background-img-contain {
+    width: 100%;
+    margin: 0;
+}
+
+.background-img-contain img {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+}
+
+.see-menu {
+    background-color: var(--color-button); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 15px;
+    text-align: center;
+    position: absolute;
+    text-decoration: none;
+    font-size: 16px;
+    top: 50%;
+    left: 35%;
+    z-index: 10;
+}
+
+.hop-contain {
+    background-color: var(--color-navbar);
+    opacity: 0.45;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 150px;
+    vertical-align: middle;
+    z-index: 10;
+}
+
+.hop-header {
+    color: white;
+}
+
+.hop-date {
+    color: white;
+    font-weight: 500;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: var(--color-navbar);
+    font-family: var(--font-header);
+}
+
+footer p {
+    line-height: 0;
+}
 /**
 - media query for a tablet 
 **/
 @media screen and (max-width: 1024px) {
+    /* NAVBAR */
     span.nav-link {
         margin: 0 10px;
     }
