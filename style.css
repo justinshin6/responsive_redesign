@@ -7,6 +7,7 @@
 /* CONSTANTS */
 :root {
     --color-background: #e2e8dd;
+    --color-background-hover: #cee7ba;
     --color-navbar: #697268;
     --color-button: #ee6161;
     --color-button-hover: #ec2424;
@@ -223,6 +224,11 @@ span.hamburger {
     flex-direction: column;
     justify-content: space-between;
     margin: 50px;
+}
+
+.feedback-card:hover {
+    background-color: var(--color-background-hover);
+    cursor: pointer;
 }
 
 .top-section {
