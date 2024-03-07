@@ -8,7 +8,8 @@
 :root {
     --color-background: #e2e8dd;
     --color-navbar: #697268;
-    --color-button: #ef8787;
+    --color-button: #ee6161;
+    --color-button-hover: #ec2424;
     --font-header: "Jim Nightshade";
     --font-body: "Jua";
 }
@@ -104,6 +105,10 @@ span.hamburger {
     border: none;
     border-radius: 7px;
     cursor: pointer;
+}
+
+.see-menu:hover {
+    background-color: var(--color-button-hover);
 }
 
 .hop-contain {
