@@ -8,6 +8,9 @@
     <!-- CSS -->
     <link href="style.css" rel="stylesheet" type="text/css" />        
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
 </head>
 <body>
     <!-- NAVBAR -->
@@ -16,59 +19,50 @@
         <div class="nav-nav">
             <div class="nav-holder nav-left">
                 <span class="nav-link nav-link-main">
-                    <a class="ul ul-1" href="#" target="_self">Grandma's Country Kitchen</a>
+                    <a aria-label="Title" class="ul ul-1" href="#" target="_self">Grandma's Country Kitchen</a>
                 </span>
             </div>
             <div class="nav-holder nav-left">
                 <span class="nav-link">
-                    <a class="ul ul-1" href="#" target="_self">Home</a>
+                    <a aria-label="home" class="ul ul-1" href="#" target="_self">Home</a>
                 </span>
                 <span class="nav-link">
-                    <a class="ul ul-2" href="#" target="_self">Menu</a>
+                    <a aria-label="menu" class="ul ul-2" href="#" target="_self">Menu</a>
                 </span>
                 <span class="nav-link">
-                    <a class="ul ul-3" href="#" target="_self">Gift Cards</a>
+                    <a aria-label="gift cards" class="ul ul-3" href="#" target="_self">Gift Cards</a>
                 </span>
                 <span class="nav-link">
-                    <a class="ul ul-4" href="#" target="_self">About</a>
+                    <a aria-label="about" class="ul ul-4" href="#" target="_self">About</a>
                 </span>
                 <span class="nav-link">
-                    <a class="ul ul-5" href="#" target="_self">Contact</a>
+                    <a aria-label="contacts" class="ul ul-5" href="#" target="_self">Contact</a>
                 </span>
-
-            </div>
-        </div>
-
-        <!-- MOBILE NAV -->
-        <div id="navholder-mobile" class="navholder-mobile">
-            <a class="closebtn" onclick="toggleNav()">☰</a>
-            <div class="navholder-content">
-                <a class="ul ul-1" href="#" onclick="toggleNav()"  target="_self">Test</a>
 
             </div>
         </div>
 
         <!-- MOBILE NAV BUTTON -->
-        <span class="hamburger" onclick="toggleNav()">☰</span>
+        <span class="hamburger" >☰</span>
     </nav>
 
 
     <!-- BACKGROUND SECTION  -->
     <section class="background">
             <div class="background-img-contain">
-                <img src="assets/background.jpg" alt="background">
-                <button class="see-menu">See Menu</button>
+                <img aria-label="background-image" class="background-img" src="assets/background.jpg" alt="background">
+                <button aria-label="see-menu" class="see-menu">See Menu</button>
             </div>
             <div class="hop-contain">
-                <h1 class="hop-header">Hours of Operation</h1>
-                <ul>
-                    <li class="hop-date">Monday: 6:30am-2:00pm</li>
-                    <li class="hop-date">Tuesday: 6:30am-2:00pm</li>
-                    <li class="hop-date">Wednesday: 6:30am-2:00pm</li>
-                    <li class="hop-date">Thursday: 6:30am-2:00pm</li>
-                    <li class="hop-date">Friday: 6:30am-2:00pm</li>
-                    <li class="hop-date">Saturday: 8:00am-12:00pm</li>
-                    <li class="hop-date">Sunday: 10:30am-1:30pm</li>
+                <h1 aria-label="hours of operation" class="hop-header">Hours of Operation</h1>
+                <ul class="hop-list">
+                    <li aria-label="Monday" class="hop-date">Monday: 6:30am-2:00pm</li>
+                    <li aria-label="Tuesday" class="hop-date">Tuesday: 6:30am-2:00pm</li>
+                    <li aria-label="Wednesday" class="hop-date">Wednesday: 6:30am-2:00pm</li>
+                    <li aria-label="Thursday" class="hop-date">Thursday: 6:30am-2:00pm</li>
+                    <li aria-label="Friday" class="hop-date">Friday: 6:30am-2:00pm</li>
+                    <li aria-label="Saturday" class="hop-date">Saturday: 8:00am-12:00pm</li>
+                    <li aria-label="Sunday" class="hop-date">Sunday: 10:30am-1:30pm</li>
                 </ul>
             </div>
     </section>
@@ -76,33 +70,55 @@
     <!-- AMENITIES AND LOCATION -->
     <section class="am-lo">
         <div class="amenities-contain">
-            <h1>Amenities</h1>
+            <h1 aria-label="Amenities" class="amenities-head">Amenities</h1>
+            <div class="amenities-row">
+                <div class="amenity">
+                    <i class="fa fa-car"></i>
+                    <span aria-label="Takeout" class="amenity-icon-name">Takeout</span>
+                </div>
+                <div class="amenity">
+                    <i class="fa fa-egg"></i>
+                    <span aria-label="breakfast/lunch" class="amenity-icon-name">Breakfast/Lunch</span>
+                </div>
+            </div>
+            <div class="amenities-row">
+                <div class="amenity">
+                    <i class="fa fa-wheelchair"></i>
+                    <span aria-label="Wheelchair-accesible" class="amenity-icon-name">Wheelchair-accesible</span>
+                </div>
+                <div class="amenity">
+                    <i class="fa fa-mug-hot"></i>
+                    <span aria-label="Coffee/Tea" class="amenity-icon-name">Coffee/Tea</span>
+                </div>
+            </div>
         </div>
         <div class="location-contain">
-            <h1>Location</h1>
+            <h1 aria-label="Location" class="location-head">Location</h1>
+            <img aria-label="Location placeholder" src="assets/location.jpeg", alt="location pin" class="location-img">
         </div>
     </section>
     <!-- FEEDBACK SECTION -->
     <section class="feedback">
-        <h1 class="feedback-header">Feedback Responses</h1>
+        <h1 aria-label="Feedback Responses" class="feedback-header">Feedback Responses</h1>
 
         <div class="feedback-contain">
             <div class="feedback-card fc-1">
                 <div class="top-section">
-                    <img src="assets/profile_icon.png" alt="profile-icon" class="profile-img">
+                    <img aria-label="profile-image" src="assets/profile_icon.png" alt="profile-icon" class="profile-img">
                     <div class="stars">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star none"></i> 
                     </div>
                 </div>
-                <p class="card-desc">Thought that the food was (egg)cellent! (get it haha)</p>
+                <p aria-label="Thought that the food was (egg)cellent! (get it haha)" 
+                class="card-desc">Thought that the food was (egg)cellent! (get it haha)</p>
             </div>
             <div class="feedback-card fc-2">
                 <div class="top-section">
-                    <img src="assets/profile_icon.png" alt="profile-icon" class="profile-img">
+                    <img aria-label="profile-image" src="assets/profile_icon.png" alt="profile-icon" class="profile-img">
                     <div class="stars">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -111,28 +127,30 @@
                         <i class="fa fa-star"></i>
                     </div>
                 </div>
-                <p class="card-desc">Stellar food. Would definitely come again.</p>
+                <p aria-label="Stellar food. Would definitely come again." 
+                class="card-desc">Stellar food. Would definitely come again.</p>
             </div>
             <div class="feedback-card fc-3">
                 <div class="top-section">
-                    <img src="assets/profile_icon.png" alt="profile-icon" class="profile-img">
+                    <img aria-label="profile-image" src="assets/profile_icon.png" alt="profile-icon" class="profile-img">
                     <div class="stars">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
-                        <i class="fa fa-star no-shade"></i>
+                        <i class="fa fa-star none"></i> 
                     </div>
                 </div>
-                <p class="card-desc">This is like Amy's Place—but better!</p>
+                <p aria-label="This is like Amy's Place—but better!"
+                class="card-desc">This is like Amy's Place—but better!</p>
             </div>
                     
         </div>
     </section>
     <!-- FOOTER -->
-    <footer>
+    <footer aria-label="Local owned in Bremen, Georgia!" 
+    class="footer">
         <p>Local owned in Bremen, Georgia!</p>
-        <p>Copyright © 2024 </p>
     </footer>
 </body>
 </html>
